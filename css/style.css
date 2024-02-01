@@ -68,3 +68,84 @@ main {
   padding: 0 10%;
 
 }
+
+
+/* CARDS */
+
+.card {
+  font-family: "Open Sans";
+  margin-bottom: 0.5rem;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 25rem;
+}
+
+.card__container-date {
+  background-color: #d8605f;
+  color: white;
+  width: 5rem;
+  max-height: 3.75rem;
+  position: absolute;
+}
+
+.card__content--date {
+  display: inline;
+  line-height: 0.3em;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+p.date {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p.month {
+  font-size: 0.75rem;
+}
+
+.card__content--img {
+  width: 22rem;
+  height: 19rem;
+}
+
+.card__container--desc {
+  background-color: #19b2de;
+  width: 22rem;
+  max-height: 4.3rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  display: inline;
+  line-height: 0.2rem;
+}
+
+.card__content--desc {
+  margin: 1rem 2rem;
+}
+
+.card-desc-title {
+  font-family: "Ubuntu";
+  font-weight: normal;
+}
+
+.card-desc-text {
+  font-size: 0.75rem;
+}
+
+.card-desc-icon {
+  position: absolute;
+  bottom: 0;
+}
+
+.camera-icon {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 18rem;
+}
