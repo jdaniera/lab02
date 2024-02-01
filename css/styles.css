@@ -255,3 +255,42 @@ p.month {
 
 
 
+
+.footer-img img{
+  max-width: 9rem;
+}
+
+
+.footer {
+  display: flex;
+  background-color: #16242f;
+  color: white;
+}
+
+.footer--icons img{
+  max-width: 3em;
+  
+}
+
+.footer--icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.25rem;
+  justify-content: center;
+}
+
+.footer--bio {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-inner-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #16242f;
+  align-items: center;
+  column-gap: 2em;
+
+  
+}
