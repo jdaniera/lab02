@@ -303,6 +303,49 @@ p.month {
   max-width: 1.5rem;
 }
 
+/* lower section */
+
+.section--misc {
+  display: flex;
+  justify-content: center;
+
+}
+
+.section--misc img{
+  display: flex;
+  margin-bottom: 1em;
+  display: flex;
+  max-width: 25em;
+  height: auto;
+
+
+}
+
+.inner-container-lower-section {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.section--misc__title {
+  text-align: center;
+  line-height: 0.1em;
+  margin-bottom: 1em;
+
+}
+
+.section--misc__title h3{
+  font-weight: normal;
+
+}
+
+.section--misc__title p{
+  font-weight: normal;
+  font-size: 0.5rem;
+  color: gray;
+
+}
+
 
 /* FOOTER  */
 
