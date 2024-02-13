@@ -364,7 +364,7 @@ p.month {
 .section--misc {
   display: flex;
   justify-content: center;
-
+  margin-top: 2rem;
 }
 
 .section--misc img{
@@ -410,6 +410,7 @@ footer {
   background-color: #16242f;
   max-width: 100%;
   color: white;
+  margin-top: 2rem;
 }
 
 .footer-inner-container {
@@ -694,6 +695,7 @@ footer {
 
   .desc-main-inner-container {
     display: grid;
+    gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -749,6 +751,16 @@ footer {
 
   .about-us-col {
     width: calc((100% - 2rem) / 2);
+  }
+
+  input[type=text] {
+    background-color: #DE6262;
+    color: #fff;
+    padding-left: 1rem;
+  }
+
+  input[type=image] {
+    margin-left: -0.5rem;
   }
 
   .footer--icons {
