@@ -27,28 +27,81 @@ main {
   width: 55%;
 }
 
+.carasel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+  min-width: 100%;
+  color: white;
+  margin-bottom: 2em;
+  
+}
+.carasel-inner-container {
+  display: flex;
+  align-self: center;
+  max-width: 50%;
+  justify-content: center;
+}
+
+.carasel-img img{
+  max-width: 100%;
+}
+
+
+.carasel-text-container {
+  display: flex;
+  position: absolute;
+  padding-top: 0em;
+  padding-right: 20em;
+
+}
+.carasel-text-one{
+  font-family: "Ubuntu";
+  color: black;
+  background-color: #ecf4fb;
+  position: absolute;
+  margin-top: 1em;
+  padding: 0 2em 0 1em;
+  border-left: solid 4px #186aa2;
+}
+
+.carasel-text-two{
+  font-family: "Ubuntu";
+  color: black;
+  background-color: #ecf4fb;
+  position: absolute;
+  margin-top: 4.5em;
+  padding: 0 2em 0 1em;
+  border-left: solid 4px #df6260;
+}
+
+.carasel-text-three{
+  font-family: "Ubuntu";
+  color: black;
+  background-color: #ecf4fb;
+  position: absolute;
+  margin-top: 8em;
+  padding: 0 2em 0 1em;
+  border-left: solid 4px #fcbb00;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   width: 55%;
+  margin-bottom: 0;
 }
 
 .header-content-container {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: gray;
-  font-size: 1.5em;
-  width: 100%; */
   display: flex;
   flex-direction: row;
   align-items: end;
   position: relative;
   justify-content: center;
   width: 100%;
-  
 }
 
 
@@ -68,7 +121,6 @@ main {
 
 .header-content-logo {
   display: flex;
-  /* justify-content: center; */
   align-items: flex-end;
   margin-right: 1rem;
   padding-bottom: 0.6em;
@@ -81,7 +133,6 @@ main {
 
 .header-content-menu {
   display: flex;
-
 }
 
 .menu img {
@@ -96,18 +147,10 @@ main {
   height: auto;
 }
 
-/* .header-nav {
-  display: flex;
-  width: auto;
-  height: 2.5em;
-} */
-
-
 .header-logo {
   max-width: 32.5px;
   height: auto ;
 }
-
 
 .section--intro {
   display: flex;
@@ -134,17 +177,14 @@ h2 {
   line-height: 0.5em;
 }
 
-
 .section--services__title {
   text-align: center;
-
 }
 
 .section--services__title p{
   font-weight: 300;
   font-size: 0.4rem;
   color: gray;
-  
 }
 
 .desc-container {
@@ -434,7 +474,6 @@ footer {
   padding-bottom: 0.5em;
   margin-bottom: 1.5em;
   font-weight: normal;
-
 }
 
 .footer--icons-minions {
@@ -450,7 +489,6 @@ footer {
 .about-us-title {
   font-family:"Ubuntu", sans-serif;
   font-size: 1.0em;
-
 }
 
 
@@ -476,6 +514,9 @@ footer {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+  .carasel-container {
+    display: none;
+  }
 
   .header-content-container {
     display: flex;
@@ -592,7 +633,56 @@ footer {
     align-items: center;
     font-size: 80%;
   }
+
+  .carasel-text-one p {
+    font-size: 0.8em;
+  }
+  .carasel-text-two p {
+    font-size: 0.8em;
+  }
+  .carasel-text-three p {
+    font-size: 0.8em;
+  }
+
+  .carasel-text-container {
+    display: flex;
+    position: absolute;
+    padding-top: 0em;
+    padding-right: 20em;
   
+  }
+
+  .carasel-text-one{
+    font-family: "Ubuntu";
+    color: black;
+    background-color: #ecf4fb;
+    position: absolute;
+    margin-top: 2.5em;
+    padding: 0 2em 0 1em;
+    border-left: solid 4px #186aa2;
+  }
+  
+  .carasel-text-two{
+    font-family: "Ubuntu";
+    color: black;
+    background-color: #ecf4fb;
+    position: absolute;
+    margin-top: 5.2em;
+    padding: 0 2em 0 1em;
+    border-left: solid 4px #df6260;
+  
+  }
+  .carasel-text-three{
+    font-family: "Ubuntu";
+    color: black;
+    background-color: #ecf4fb;
+    position: absolute;
+    margin-top: 7.9em;
+    padding: 0 2em 0 1em;
+    border-left: solid 4px #fcbb00;
+  
+  }
+
   .desc-main-inner-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -604,16 +694,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  .desc-top-content {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; */
-  } 
-  .desc-text {
-
   }
   
   .desc-inner-container img{
@@ -678,12 +758,6 @@ footer {
     padding-bottom: 1em;
   }
 
-  /* .header-nav {
-    display: flex;
-    width: auto;
-    height: 4em;
-  } */
-
   body {
     display: flex;
     flex-direction: column;
@@ -691,9 +765,56 @@ footer {
     align-items: center;
   }
 
+  .carasel-text-container {
+    display: flex;
+    position: absolute;
+    padding-top: 5em;
+    padding-right: 40em;
+  }
+
+  .carasel-text-one{
+    font-family: "Ubuntu";
+    color: black;
+    background-color: #ecf4fb;
+    position: absolute;
+    margin-top: 1em;
+    padding: 0 2em 0 1em;
+    border-left: solid 4px #186aa2;
+  }
+  
+  .carasel-text-two{
+    font-family: "Ubuntu";
+    color: black;
+    background-color: #ecf4fb;
+    position: absolute;
+    margin-top: 4.5em;
+    padding: 0 2em 0 1em;
+    border-left: solid 4px #df6260;
+  
+    
+  }
+  .carasel-text-three{
+    font-family: "Ubuntu";
+    color: black;
+    background-color: #ecf4fb;
+    position: absolute;
+    margin-top: 8em;
+    padding: 0 2em 0 1em;
+    border-left: solid 4px #fcbb00;
+  
+  }
+  
+  .carasel-text-one p {
+    font-size: 1em;
+  }
+  .carasel-text-two p {
+    font-size: 1em;
+  }
+  .carasel-text-three p {
+    font-size: 1em;
+  }
   .menu img {
     display: none;
-  
   }
 
   
@@ -708,16 +829,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  .desc-top-content {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; */
-  } 
-  .desc-text {
-
   }
   
   .desc-inner-container img{
